@@ -1,25 +1,142 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <title>Hello from Docker</title>
-    <style>
-        body {
-            background-color: lightgreen;
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin-top: 100px;
-        }
-        h1 {
-            color: #333;
-        }
-        p {
-            color: gray;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hikmal Rangga Arnanto | UI/UX & Flutter Developer</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Poppins", sans-serif;
+      background: linear-gradient(135deg, #2af598 0%, #009efd 100%);
+      color: #1e1e1e;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .portfolio {
+      background: #ffffff;
+      border-radius: 24px;
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+      padding: 40px 60px;
+      max-width: 700px;
+      width: 90%;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .portfolio:hover {
+      transform: translateY(-8px);
+    }
+
+    h1 {
+      font-size: 2.4em;
+      color: #0e76a8;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-size: 1.2em;
+      color: #555;
+      margin-bottom: 25px;
+    }
+
+    p {
+      font-size: 1em;
+      color: #555;
+      line-height: 1.8;
+      margin-bottom: 25px;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+      margin-bottom: 25px;
+    }
+
+    .skill {
+      background: linear-gradient(135deg, #009efd, #2af598);
+      color: #fff;
+      padding: 8px 16px;
+      border-radius: 20px;
+      font-weight: 500;
+      transition: transform 0.2s ease;
+    }
+
+    .skill:hover {
+      transform: scale(1.1);
+    }
+
+    .links a {
+      display: inline-block;
+      margin: 8px;
+      text-decoration: none;
+      color: #fff;
+      background: #0e76a8;
+      padding: 10px 20px;
+      border-radius: 25px;
+      transition: all 0.3s ease;
+    }
+
+    .links a:hover {
+      background: #009efd;
+    }
+
+    footer {
+      margin-top: 20px;
+      color: #555;
+      font-size: 0.9em;
+    }
+
+    @media (max-width: 600px) {
+      .portfolio {
+        padding: 30px;
+      }
+      h1 {
+        font-size: 2em;
+      }
+    }
+  </style>
 </head>
 <body>
-    <h1>Hello Rangga from Docker!</h1>
-    <p>This is a modified version with custom placeholder text.</p>
+  <div class="portfolio">
+    <h1>Hikmal Rangga Arnanto</h1>
+    <h2>Mahasiswa Teknik Informatika | UI/UX Enthusiast & Flutter Developer</h2>
+    <p>
+      Halo! Saya Hikmal Rangga Arnanto, mahasiswa semester 7 Teknik Informatika Universitas Paramadina.  
+      Saya memiliki ketertarikan besar pada <strong>UI/UX Design</strong> dan <strong>pengembangan aplikasi berbasis Dart (Flutter)</strong>.  
+      Tujuan saya adalah menciptakan pengalaman digital yang sederhana, menarik, dan fungsional untuk pengguna.
+    </p>
+
+    <div class="skills">
+      <span class="skill">Flutter</span>
+      <span class="skill">Dart</span>
+      <span class="skill">UI/UX Design</span>
+      <span class="skill">Figma</span>
+      <span class="skill">Node.js</span>
+      <span class="skill">HTML/CSS</span>
+      <span class="skill">Python</span>
+      <span class="skill">Prototyping</span>
+    </div>
+
+    <div class="links">
+      <a href="mailto:hikm4lr4ngga@gmail.com">✉️ Email</a>
+      <a href="https://github.com/Rangz-GG" target="_blank">💻 GitHub</a>
+      <a href="#">🎨 Portofolio</a>
+    </div>
+
+    <footer>
+      © 2025 Hikmal Rangga Arnanto — Dibangun dengan Flask & Docker 🐳
+    </footer>
+  </div>
 </body>
 </html>
