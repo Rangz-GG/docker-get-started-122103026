@@ -1,0 +1,15 @@
+# Gunakan image dasar Python
+FROM python:3.9-slim
+
+# Set folder kerja di dalam container
+WORKDIR /app
+
+# Salin dan install dependencies
+COPY requirements.txt requirements.txt
+RUN pip install -r requirements.txt
+
+# Salin semua file proyek
+COPY . .
+
+# Jalankan aplikasi
+CMD ["python", "app.py"]
